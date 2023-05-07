@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Conde Hamburgueria</title>
+  <link rel="stylesheet" href="hamburgueria.css">
+</head>
+<body>
+<div class="container">
+  <h1>Conde Hamburgueria</h1>
+  <form>
+    <label for="name">Nome:</label>
+    <input type="text" id="name" required>
+    <label for="address">Endereço:</label>
+    <input type="text" id="address" required>
+    <label for="phone">Telefone:</label>
+    <input type="tel" id="phone" required>
+    <label for="burgers">Escolha seu hambúrguer:</label>
+    <select id="burgers">
+      <option value="hamburguer simples">Hambúrguer Simples</option>
+      <option value="hamburguer duplo">Hambúrguer Duplo</option>
+      <option value="hamburguer bacon">Hambúrguer com Bacon</option>
+      <option value="hamburguer cheddar">Hambúrguer com Cheddar</option>
+    </select>
+
+    <label for="burgers">Escolha seu acompanhamento:</label>
+    <select id="acompanhamento">
+      <option value="batata">Batata</option>
+      <option value="onion rings">Onion Rings</option>
+      <option value="nugguets">Nugguets</option>
+      <option value="batata com molho de queijo">Batata com molho de queijo</option>
+    </select>
+
+    <button type="submit" onclick="submitOrder()">Fazer Pedido</button>
+  </form>
+  <div id="output"></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
